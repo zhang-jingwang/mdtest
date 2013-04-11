@@ -121,10 +121,10 @@ int path_count = 0;
 int nstride = 0; /* neighbor stride */
 MPI_Comm testcomm;
 table_t * summary_table;
-#ifdef _HAS_PLFS
-char using_plfs_path = 0;
 pid_t pid;
 uid_t uid;
+#ifdef _HAS_PLFS
+char using_plfs_path = 0;
 Plfs_fd *wpfd = NULL;
 Plfs_fd *rpfd = NULL;
 Plfs_fd *cpfd = NULL;
